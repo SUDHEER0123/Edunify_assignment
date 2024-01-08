@@ -22,7 +22,7 @@ const AddSchool = () => {
     const formdata = { ...data, image: fileName };
     try {
       const res = await axios.post(
-        "https://edunify-assignment.vercel.app/api/schools/addschool",
+        "http://localhost:3000/api/schools/addschool",
         formdata
       );
       if (res.status === 201) {

@@ -11,7 +11,7 @@ const ShowSchool = () => {
     async function getPageData() {
       try {
         const response = await axios.get(
-          "https://edunify-assignment.vercel.app/api/schools/showschool"
+          "http://localhost:3000/api/schools/showschool"
         );
         setSchoolData(response.data.data);
       } catch (error) {
