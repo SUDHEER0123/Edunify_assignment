@@ -1,11 +1,11 @@
 import mysql from "mysql2/promise";
 
 const dbconnection = await mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "1234",
+  host: "sql12.freesqldatabase.com",
+  user: "sql12675500",
+  password: "DJpFPgtdQP",
   port: 3306,
-  database: "data",
+  database: "sql12675500",
 });
 
 export default dbconnection;
