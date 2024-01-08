@@ -1,10 +1,8 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div
-      className="flex justify-center items-center h-screen bg-gradient-to-b from-blue-500 to-purple-500"
-    >
+    <div className="flex justify-center items-center h-screen bg-gradient-to-b from-blue-500 to-purple-500">
       <div className="text-center text-white">
         <h1 className="text-4xl font-bold mb-6">Welcome to School Data</h1>
         <div className="flex flex-col gap-4">

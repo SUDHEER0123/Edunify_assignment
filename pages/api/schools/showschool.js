@@ -1,7 +1,6 @@
 import dbconnection from "../../../configuration/db";
 
 export default async function handler(req, res) {
-  
   try {
     const query = "SELECT * FROM schools";
     const [data] = await dbconnection.execute(query);

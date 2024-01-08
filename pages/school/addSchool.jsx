@@ -2,8 +2,8 @@ import { useForm } from "react-hook-form";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import axios from "axios";
-import { ToastContainer, toast } from 'react-toastify';
-  import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const AddSchool = () => {
   const {
@@ -25,11 +25,11 @@ const AddSchool = () => {
         "http://localhost:3000/api/schools/addschool",
         formdata
       );
-      if(res.status === 201){
+      if (res.status === 201) {
         toast.success("school data added successfully");
         reset();
-      }else{
-        toast.error("failed to add the data")
+      } else {
+        toast.error("failed to add the data");
       }
     } catch (err) {
       console.log(err);
@@ -37,7 +37,7 @@ const AddSchool = () => {
   };
   return (
     <div className="h-screen bg-gradient-to-b from-blue-500 to-purple-500">
-        <ToastContainer/>
+      <ToastContainer />
       <div className="py-5 w-full text-center flex justify-center items-center gap-2">
         <button
           onClick={() => router.back()}
